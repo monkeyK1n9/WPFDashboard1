@@ -5,8 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFDashboard1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="600" Width="920"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True">
+    <Border
+        Background="#272537"
+        CornerRadius="20">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBlock
+                Text="King"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                Margin="20, 0, 0, 0"
+                Foreground="White"
+                FontSize="22"/>
 
-    </Grid>
+            <StackPanel
+                Grid.Row="1">
+                <RadioButton 
+                    Content="Home"
+                    Foreground="White"
+                    FontSize="14"/>
+            </StackPanel>
+        </Grid>
+            
+    </Border>
 </Window>
