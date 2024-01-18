@@ -57,7 +57,8 @@
                 Height="40"
                 Width="250"
                 VerticalContentAlignment="Center"
-                HorizontalAlignment="Left"/>
+                HorizontalAlignment="Left"
+                Style="{StaticResource ModernTextBox}"/>
         </Grid>
             
     </Border>
