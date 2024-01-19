@@ -9,7 +9,9 @@ namespace WPFDashboard1.MVVM.ViewModel
 {
     class MainViewModel : ObservableObject
     {
-       
+        // commands to switch between views
+        public RelayCommand NavigateToHomeCommand { get; set; }
+        public RelayCommand NavigateToDiscoveryCommand { get; set; }
         public HomeViewModel Home { get; set; }
         public DiscoveryViewModel Discovery { get; set; }
 
@@ -30,6 +32,22 @@ namespace WPFDashboard1.MVVM.ViewModel
             Home = new HomeViewModel();
             Discovery = new DiscoveryViewModel();
             CurrentView = Home;
+
+            NavigateToHomeCommand = new RelayCommand(
+                o => 
+                    {
+                       CurrentView = Home;
+                    }, 
+                null
+            );
+
+            NavigateToDiscoveryCommand = new RelayCommand(
+               o =>
+               {
+                   CurrentView = Discovery;
+               },
+               null
+           );
         }
     }
 }

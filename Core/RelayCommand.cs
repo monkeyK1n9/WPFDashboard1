@@ -18,7 +18,7 @@ namespace WPFDashboard1.Core
             remove => CommandManager.RequerySuggested -= value;
         }
 
-        public RelayCommand(Action<object> execute, Func<object, bool> canExecute)
+        public RelayCommand(Action<object> execute, Func<object, bool>? canExecute = null)
         {
             _execute = execute;
             _canExecute = canExecute;
@@ -26,7 +26,7 @@ namespace WPFDashboard1.Core
 
         public bool CanExecute(object? parameter)
         {
-            return _canExecute(parameter);
+            return _canExecute == null || _canExecute(parameter);
         }
 
         public void Execute(object? parameter)

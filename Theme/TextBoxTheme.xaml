@@ -32,7 +32,8 @@
                                 HorizontalAlignment="Left"
                                 Margin="10, 0, 0, 0"
                                 FontSize="11"
-                                Foreground="DarkGray">
+                                Foreground="DarkGray"
+                                FontFamily="/Fonts/#Poppins">
 
                                 <TextBlock.Style>
                                     <Style TargetType="{x:Type TextBlock}">

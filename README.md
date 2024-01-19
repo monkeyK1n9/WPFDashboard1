@@ -8,11 +8,17 @@
 
 
 ## Introduction
+This is the first model of my WPF Dashboard series. We have a main window with 
+side bar that permits navigation between Home, Discovery and Features.
+
+| Preview |
+|---------|
+| ![Main window](/Docs/MainWindow.PNG) |
 
 ## Getting started
 ### Try The Published (production) app
 Download the latest zip package from the repo. Unzip the file in your windows 
-machine and double click on **WPFNavigation.exe** file. You are good to go.
+machine and double click on **WPFDashboard1.exe** file. You are good to go.
 
 ### Developer
 You want to play with the code ? Clone, download or fork the repo.

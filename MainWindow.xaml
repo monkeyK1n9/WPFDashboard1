@@ -43,13 +43,16 @@
                     Foreground="White"
                     FontSize="14"
                     Height="50"
-                    Style="{StaticResource MenuButtonTheme}"/>
+                    Style="{StaticResource MenuButtonTheme}"
+                    IsChecked="True"
+                    Command="{Binding NavigateToHomeCommand}"/>
                 <RadioButton 
                     Content="Discovery"
                     Foreground="White"
                     FontSize="14"
                     Height="50"
-                    Style="{StaticResource MenuButtonTheme}"/>
+                    Style="{StaticResource MenuButtonTheme}"
+                    Command="{Binding NavigateToDiscoveryCommand}"/>
                 <RadioButton 
                     Content="Feature"
                     Foreground="White"
