@@ -9,7 +9,9 @@ namespace WPFDashboard1.MVVM.ViewModel
 {
     class MainViewModel : ObservableObject
     {
+       
         public HomeViewModel Home { get; set; }
+        public DiscoveryViewModel Discovery { get; set; }
 
         private object _currentView;
 
@@ -26,6 +28,7 @@ namespace WPFDashboard1.MVVM.ViewModel
         public MainViewModel()
         {
             Home = new HomeViewModel();
+            Discovery = new DiscoveryViewModel();
             CurrentView = Home;
         }
     }
